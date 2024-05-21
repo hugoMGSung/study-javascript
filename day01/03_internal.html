@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Internal script</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+	<h2>새로고침(F5)</h2>
+	<script>
+		function random(number) {
+			return Math.floor(Math.random() * number);
+		}
+
+		function bgChange() {
+			const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+			document.body.style.backgroundColor = rndCol;
+		}
+		bgChange();
+	</script>
+</body>
+</html>
